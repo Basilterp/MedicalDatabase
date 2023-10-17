@@ -1,7 +1,7 @@
 public class patient {
 
     private String patientName;
-    private int patientAge;
+    private int patientUUID;
     private String patientDOB; //Patient Date of Birth
 
     // Patient Name
@@ -12,12 +12,12 @@ public class patient {
         return patientName;
     }
 
-    // Patient Age
-    public void setPatientAge(int newAge) {
-        patientAge = newAge;
+    // Patient UUID
+    public void setPatientUUID(int newUUID) {
+        patientUUID = newUUID;
     }
-    public int getPatientAge() {
-        return patientAge;
+    public int getPatientUUID() {
+        return patientUUID;
     }
 
     //Patient Date of Birth
@@ -35,6 +35,6 @@ public class patient {
 
     // Overriding toString
     public String toString(){
-        return patientName + " " + patientAge;
+        return patientUUID+" || "+patientName+" "+patientDOB;
     }
 }
