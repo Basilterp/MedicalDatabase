@@ -1,8 +1,14 @@
 public class patient {
 
     private String patientName;
-    private int patientUUID;
+//    private int patientUUID;
     private String patientDOB; //Patient Date of Birth
+
+    public patient(String patientName, String patientDOB){
+        this.patientName = patientName;
+        this.patientDOB = patientDOB;
+    }
+
 
     // Patient Name
     public void setName(String newName){
@@ -12,13 +18,13 @@ public class patient {
         return patientName;
     }
 
-    // Patient UUID
+    /* Patient UUID
     public void setPatientUUID(int newUUID) {
         patientUUID = newUUID;
     }
     public int getPatientUUID() {
         return patientUUID;
-    }
+    } */
 
     //Patient Date of Birth
     public void setPatientDOB(String newDOB){
@@ -29,12 +35,8 @@ public class patient {
     }
 
 
-    public void add(String patientName){
-
-    }
-
     // Overriding toString
     public String toString(){
-        return patientUUID+" || "+patientName+" "+patientDOB;
+        return patientName+" "+patientDOB;
     }
 }
